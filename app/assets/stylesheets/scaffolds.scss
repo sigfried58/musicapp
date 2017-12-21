@@ -56,6 +56,10 @@ div {
   display: table;
 }
 
+.field_input {
+  padding:8px;display:block;border:none;border-bottom:1px solid #ccc;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;

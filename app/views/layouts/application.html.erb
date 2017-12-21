@@ -9,17 +9,15 @@
   </head>
 
   <body>
+    <center>
     <%= yield %>
     <% if user_signed_in? %>
 
     Bienvenido, <%= current_user.email %>
 
-    <%= link_to "Salir Sesión", destroy_user_session_path, method: :delete %>
-
-    <% else %>
-
-    <%= link_to "Iniciar Sesión", new_user_session_path %>
+    <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %>
 
     <% end %>
+  </center>
   </body>
 </html>
